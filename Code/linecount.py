@@ -1,0 +1,11 @@
+sname = input('Enter the file name to be counted : ')
+sfile = open(sname)
+count = sum( 1 for line in sfile)
+print('No of lines : ', count)
+#sfile.close()
+##rfile = open(sname)
+sfile.seek(0)
+for i in range(1,count+1):
+  str = sfile.readline()
+  print('No of words in line %d is ' %i, len(str))
+sfile.close()

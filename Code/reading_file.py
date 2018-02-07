@@ -1,0 +1,6 @@
+print('This is my first file program')
+fname = input('Enter the file name to read :')
+rvar = open(fname)
+print('Reading the file.....')
+print(rvar.read())
+print('end of the file.....')
